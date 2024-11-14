@@ -1,0 +1,206 @@
+button.accordion {
+    background-color: #f8f8f8;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 0px;
+    background-color: #f8f8f8;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0%;
+    transition: max-height 0.2s ease-out;
+}
+
+div.panel1 {
+    /*    padding: 0 0px;
+   background-color:#f8f8f8;
+    max-height: 0;
+    overflow: hidden;*/
+    margin-top: 0%;
+    transition: max-height 0.2s ease-out;
+}
+
+/* CSS Document */
+
+.thumbnail {
+    margin-bottom: 6px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+    margin-top: 0%;
+    width: 10%;
+}
+
+.carousel-inner>.item:before {
+    width: 100%;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block !important;
+    background: none;
+}
+
+/*-----------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.mainNav {
+    background: #f8f8f8;
+    width: 100%;
+}
+
+/* First Level */
+
+.mainNav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #444
+}
+
+.mainNav ul li {
+    border-top: 1px solid #eee;
+    font-weight: 600;
+}
+
+.mainNav ul li a {
+    color: #000000;
+    display: block;
+    font-size: 1.1em;
+    line-height: normal;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainNav ul li a:hover {
+    /*background: #e4e3e3;*/
+    color: #fec107;
+    text-decoration: none;
+}
+
+/* Second Level */
+
+.mainNav ul ul {
+    border-bottom: none
+}
+
+.mainNav ul ul li {
+    border-top: 1px solid #222;
+    background: #ddd;
+    font-weight: 400;
+}
+
+.mainNav ul ul li a {
+    color: #000000;
+    display: block;
+    font-size: 1em;
+    line-height: normal;
+    padding: 10px 1em 10px 22px;
+}
+
+.mainNav ul ul li a:hover {
+    /*background: #e4e3e3;*/
+    color: #fec107;
+}
+
+/* Third Level */
+
+.mainNav ul ul ul {
+    border-top: 1px solid #222;
+}
+
+.mainNav ul ul ul li {
+    border: none;
+    background: #fec107;
+}
+
+.mainNav ul ul ul li a {
+    padding-left: 2.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainNav ul ul ul li a:hover {
+    color: #fff;
+}
+
+/* Accordion Button */
+
+ul li.has-subnav .accordion-btn {
+    color: #fff;
+    background: #61605f;
+    font-size: 16px;
+    /*padding-top:11px;*/
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+.accordion_container {
+    width: 100%;
+}
+
+.accordion_head {
+    background-color: #f8f8f8;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 1px 0;
+    padding: 7px 11px;
+    border: 1px solid #ccc;
+}
+
+.accordion_body {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.accordion_body p {
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+.plusminus {
+    float: right;
+}
